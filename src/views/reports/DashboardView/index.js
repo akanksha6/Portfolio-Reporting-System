@@ -13,6 +13,7 @@ import TasksProgress from './TasksProgress';
 import TotalCustomers from './TotalCustomers';
 import TotalProfit from './TotalProfit';
 import TrafficByDevice from './TrafficByDevice';
+import Line from './Line'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -89,6 +90,22 @@ const Dashboard = () => {
             xs={12}
           >
             <TrafficByDevice />
+          </Grid>
+          <Grid
+            item
+            lg={4}
+            md={6}
+            xl={3}
+            xs={12}
+          >
+	     <Grid
+            item
+            lg={8}
+            md={12}
+            xl={9}
+            xs={12}
+          >
+            <Line />
           </Grid>
           <Grid
             item

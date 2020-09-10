@@ -2,11 +2,7 @@ import React from 'react';
 
 const Logo = (props) => {
   return (
-    <img
-      alt="Logo"
-      src="/static/logo.svg"
-      {...props}
-    />
+    <h1 style={{color:"white", fontFamily: "Arial, Courier, monospace"}}>Portfolio</h1>
   );
 };
 
