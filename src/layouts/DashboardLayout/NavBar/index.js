@@ -50,6 +50,11 @@ const items = [
     icon: UserIcon,
     title: 'Account'
   },
+   {
+    href: '/register',
+    icon: UserPlusIcon,
+    title: 'New Trade'
+  },
   {
     href: '/app/settings',
     icon: SettingsIcon,
