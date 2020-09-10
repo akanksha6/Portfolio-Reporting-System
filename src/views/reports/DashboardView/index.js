@@ -22,6 +22,16 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(3),
     paddingTop: theme.spacing(3)
   }
+  importButton: {
+    marginRight: theme.spacing(3),
+    paddingBottom: theme.spacing(2),
+    paddingTop: theme.spacing(2)
+  },
+  exportButton: {
+    marginRight: theme.spacing(3),
+    paddingBottom: theme.spacing(2),
+    paddingTop: theme.spacing(2)
+  }
 }));
 
 const Dashboard = () => {
@@ -32,7 +42,26 @@ const Dashboard = () => {
       className={classes.root}
       title="Dashboard"
     >
-      <Container maxWidth={false}>
+       <Container maxWidth={false}>
+   
+          <Box
+          display="flex"
+          justifyContent="flex-end"
+          >
+            <Button className={classes.importButton}>
+              Import
+             </Button>
+            <Button className={classes.exportButton}>
+              Export
+            </Button>
+            <Button
+              color="primary"
+              variant="contained"
+            >
+              Add customer
+            </Button>
+        </Box>
+        <Box mt={3}>
         <Grid
           container
           spacing={3}
@@ -125,7 +154,8 @@ const Dashboard = () => {
           >
             <LatestOrders />
           </Grid>
-        </Grid>
+          </Grid>
+          </Box>
       </Container>
     </Page>
   );
