@@ -13,9 +13,6 @@ import {
   makeStyles,
   useTheme
 } from '@material-ui/core';
-import LaptopMacIcon from '@material-ui/icons/LaptopMac';
-import PhoneIcon from '@material-ui/icons/Phone';
-import TabletIcon from '@material-ui/icons/Tablet';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -30,18 +27,19 @@ const TrafficByDevice = ({ className, ...rest }) => {
   const data = {
     datasets: [
       {
-        data: [63, 15, 22],
+        data: [50, 25, 12, 13],
         backgroundColor: [
           colors.indigo[500],
           colors.red[600],
-          colors.orange[600]
+          colors.orange[600],
+          colors.green[600]
         ],
         borderWidth: 8,
         borderColor: colors.common.white,
         hoverBorderColor: colors.common.white
       }
     ],
-    labels: ['Desktop', 'Tablet', 'Mobile']
+    labels: ['Equities', 'Fixed Income', 'Derivatives', 'Other Assets']
   };
 
   const options = {
@@ -68,22 +66,24 @@ const TrafficByDevice = ({ className, ...rest }) => {
 
   const devices = [
     {
-      title: 'Desktop',
-      value: 63,
-      icon: LaptopMacIcon,
+      title: 'Equities',
+      value: 50,
       color: colors.indigo[500]
     },
     {
-      title: 'Tablet',
-      value: 15,
-      icon: TabletIcon,
+      title: 'Fixed Income',
+      value: 25,
       color: colors.red[600]
     },
     {
-      title: 'Mobile',
-      value: 23,
-      icon: PhoneIcon,
+      title: 'Derivatives',
+      value: 12,
       color: colors.orange[600]
+    },
+    {
+      title: 'Other Assets',
+      value: 13,
+      color: colors.green[600]
     }
   ];
 
@@ -92,7 +92,7 @@ const TrafficByDevice = ({ className, ...rest }) => {
       className={clsx(classes.root, className)}
       {...rest}
     >
-      <CardHeader title="Traffic by Device" />
+      <CardHeader title="Your Asset Allocation" />
       <Divider />
       <CardContent>
         <Box
@@ -111,7 +111,6 @@ const TrafficByDevice = ({ className, ...rest }) => {
         >
           {devices.map(({
             color,
-            icon: Icon,
             title,
             value
           }) => (
@@ -120,7 +119,6 @@ const TrafficByDevice = ({ className, ...rest }) => {
               p={1}
               textAlign="center"
             >
-              <Icon color="action" />
               <Typography
                 color="textPrimary"
                 variant="body1"
