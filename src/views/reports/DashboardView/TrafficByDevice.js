@@ -127,7 +127,7 @@ const TrafficByDevice = ({ className, ...rest }) => {
               </Typography>
               <Typography
                 style={{ color }}
-                variant="h2"
+                variant="h3"
               >
                 {value}
                 %
