@@ -119,22 +119,16 @@ const Dashboard = () => {
             >
               <TrafficByDevice />
             </Grid>
+          
           <Grid
-            item
-            lg={4}
-            md={6}
-            xl={3}
-            xs={12}
+          item
+          lg={12}
+          md={12}
+          xl={9}
+          xs={12}
           >
-            <Grid
-                item
-                lg={8}
-                md={12}
-                xl={9}
-                xs={12}
-              >
-                <Line />
-              </Grid>
+            <Line />
+          </Grid>
             <Grid
               item
               lg={4}
@@ -153,7 +147,6 @@ const Dashboard = () => {
             >
               <LatestOrders />
             </Grid>
-          </Grid>
           </Grid>
           </Box>
       </Container>
