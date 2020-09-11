@@ -12,13 +12,13 @@ import {
   makeStyles
 } from '@material-ui/core';
 import {
-  //AlertCircle as AlertCircleIcon,
+  AlertCircle as AlertCircleIcon,
   BarChart as BarChartIcon,
-  //Lock as LockIcon,
+  Lock as LockIcon,
   Settings as SettingsIcon,
   ShoppingBag as ShoppingBagIcon,
   User as UserIcon,
-  //UserPlus as UserPlusIcon,
+  UserPlus as UserPlusIcon,
   Users as UsersIcon
 } from 'react-feather';
 import NavItem from './NavItem';
@@ -49,6 +49,11 @@ const items = [
     href: '/app/account',
     icon: UserIcon,
     title: 'Account'
+  },
+   {
+    href: '/register',
+    icon: UserPlusIcon,
+    title: 'New Trade'
   },
   {
     href: '/app/settings',

@@ -94,19 +94,28 @@ const Results = ({ className, customers, ...rest }) => {
                   />
                 </TableCell>
                 <TableCell>
-                  Name
+                  Stock Name
                 </TableCell>
                 <TableCell>
-                  Email
+                  Stock Id
                 </TableCell>
                 <TableCell>
-                  Location
+                  Trade Id
                 </TableCell>
                 <TableCell>
-                  Phone
+                  Trade Type
                 </TableCell>
                 <TableCell>
-                  Registration date
+                  Date
+                </TableCell>
+                <TableCell>
+                  Quantity
+                </TableCell>
+                <TableCell>
+                  Unit price
+                </TableCell>
+                <TableCell>
+                  Total Price
                 </TableCell>
               </TableRow>
             </TableHead>
@@ -133,27 +142,36 @@ const Results = ({ className, customers, ...rest }) => {
                         className={classes.avatar}
                         src={customer.avatarUrl}
                       >
-                        {getInitials(customer.name)}
+                        {getInitials(customer.stockName)}
                       </Avatar>
                       <Typography
                         color="textPrimary"
                         variant="body1"
                       >
-                        {customer.name}
+                        {customer.stockName}
                       </Typography>
                     </Box>
                   </TableCell>
                   <TableCell>
-                    {customer.email}
+                    {customer.stockId}
                   </TableCell>
                   <TableCell>
-                    {`${customer.address.city}, ${customer.address.state}, ${customer.address.country}`}
+                    {customer.tradeId}
                   </TableCell>
                   <TableCell>
-                    {customer.phone}
+                    {customer.tradeType}
                   </TableCell>
                   <TableCell>
                     {moment(customer.createdAt).format('DD/MM/YYYY')}
+                  </TableCell>
+                  <TableCell>
+                    {customer.quantity}
+                  </TableCell>
+                  <TableCell>
+                    {customer.unitPrice}
+                  </TableCell>
+                  <TableCell>
+                    {customer.totalPrice}
                   </TableCell>
                 </TableRow>
               ))}
