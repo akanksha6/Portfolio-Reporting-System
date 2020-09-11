@@ -38,8 +38,7 @@ const Details = ({ className, ...rest }) => {
     quantity: 0,
     tradeDate: '',
     totalPrice: 0.0,
-    unitPrice: 0.0,
-    state: 'Alabama',
+    unitPrice: 0.0
   });
 
   const handleChange = (event) => {
@@ -59,7 +58,7 @@ const Details = ({ className, ...rest }) => {
       <Card>
         <CardHeader
           subheader="Please enter the new trade details"
-          title="Trade Info"
+          title="Trade Information"
         />
         <Divider />
         <CardContent>

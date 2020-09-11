@@ -38,23 +38,24 @@ const items = [
   {
     href: '/app/customers',
     icon: UsersIcon,
-    title: 'Customers'
+    title: 'History'
   },
   {
     href: '/app/products',
     icon: ShoppingBagIcon,
-    title: 'Products'
+    title: 'Inventory'
+  },
+  {
+    href: '/app/register',
+    icon: UserPlusIcon,
+    title: 'New Trade'
   },
   {
     href: '/app/account',
     icon: UserIcon,
     title: 'Account'
   },
-   {
-    href: '/register',
-    icon: UserPlusIcon,
-    title: 'New Trade'
-  },
+  
   {
     href: '/app/settings',
     icon: SettingsIcon,
