@@ -46,7 +46,7 @@ const items = [
     title: 'Inventory'
   },
   {
-    href: '/app/register',
+    href: '/app/newtrade',
     icon: UserPlusIcon,
     title: 'New Trade'
   },

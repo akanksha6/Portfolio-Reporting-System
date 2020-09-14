@@ -126,7 +126,7 @@ const LoginView = () => {
                   color="textSecondary"
                   variant="body1"
                 >
-                  Don&apos;t have an account?
+                  Dont have an account?
                   {' '}
                   <Link
                     component={RouterLink}
