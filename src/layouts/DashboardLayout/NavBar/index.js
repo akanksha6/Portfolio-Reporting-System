@@ -19,7 +19,8 @@ import {
   ShoppingBag as ShoppingBagIcon,
   User as UserIcon,
   UserPlus as UserPlusIcon,
-  Users as UsersIcon
+  Users as UsersIcon,
+  CreditCard as BondIcon
 } from 'react-feather';
 import NavItem from './NavItem';
 
@@ -44,6 +45,11 @@ const items = [
     href: '/app/products',
     icon: ShoppingBagIcon,
     title: 'Inventory'
+  },
+  {
+    href: '/app/bondcoupon',
+    icon: BondIcon,
+    title: 'Bond Notifications'
   },
   {
     href: '/app/newtrade',

@@ -27,7 +27,7 @@ const CustomerListView = () => {
   return (
     <Page
       className={classes.root}
-      title="History"
+      title="Bond Coupons"
     >
       <Container maxWidth={false}>
         <Toolbar />
