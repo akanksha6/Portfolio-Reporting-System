@@ -13,7 +13,7 @@ import {
   makeStyles
 } from '@material-ui/core';
 
-const states = [
+ const states = [
   {
     value: 'buy',
     label: 'Buy'
@@ -32,7 +32,7 @@ const Details = ({ className, ...rest }) => {
   const classes = useStyles();
   const [values, setValues] = useState({
     stockName: ' ',
-    stockId: ' ',
+    stockType: ' ',
     tradeId: ' ',
     tradeType: '',
     quantity: 0,
@@ -86,29 +86,14 @@ const Details = ({ className, ...rest }) => {
               item
               md={6}
               xs={12}
-            >
+           >
               <TextField
                 fullWidth
-                label="Stock Id"
+                label="Stock Type"
                 name="stockId"
                 onChange={handleChange}
                 required
-                value={values.stockId}
-                variant="outlined"
-              />
-            </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
-              <TextField
-                fullWidth
-                label="Trade Id"
-                name="tradeId"
-                onChange={handleChange}
-                required
-                value={values.tradeId}
+                value={values.stockType}
                 variant="outlined"
               />
             </Grid>
@@ -186,23 +171,6 @@ const Details = ({ className, ...rest }) => {
                 variant="outlined"
               />
             </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
-              <TextField
-                fullWidth
-                label="Total Price"
-                name="totalPrice"
-                onChange={handleChange}
-                required
-                type="number"
-                value={values.totalPrice}
-                variant="outlined"
-              />
-            </Grid>
-            
           </Grid>
         </CardContent>
         <Divider />
