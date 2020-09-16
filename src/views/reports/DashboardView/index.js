@@ -48,11 +48,8 @@ const Dashboard = () => {
             display="flex"
             justifyContent="flex-end"
           >
-            <h3 className={classes.importButton}>
-                Your account balance:
-              </h3>
-              <h3 className={classes.exportButton}>
-                25000
+            <h3 className={classes.importButton} style={{color:"#3f51b5", fontFamily: "Arial, Courier, monospace"}}>
+                Your account balance: 25000
               </h3> 
               <Button
                 color="primary"
