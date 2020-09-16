@@ -12,7 +12,8 @@ import {
   makeStyles
 } from '@material-ui/core';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
-import PeopleIcon from '@material-ui/icons/PeopleOutlined';
+import MoneyIcon from '@material-ui/icons/Money'
+//import PeopleIcon from '@material-ui/icons/PeopleOutlined';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -52,18 +53,18 @@ const TotalCustomers = ({ className, ...rest }) => {
               gutterBottom
               variant="h6"
             >
-              TOTAL CUSTOMERS
+              BONDS
             </Typography>
             <Typography
               color="textPrimary"
               variant="h3"
             >
-              1,600
+              $1,600
             </Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
-              <PeopleIcon />
+              <MoneyIcon />
             </Avatar>
           </Grid>
         </Grid>
